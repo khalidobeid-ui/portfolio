@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khalid Obeidallah — Portfolio</title>
+<meta name="description" content="Portfolio de Khalid OBEIDALLAH, étudiant en Master Management, Audit et Contrôle des Organisations à Fès.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#home" class="logo">K<span>.</span>O</a>
+
+    <nav class="nav" id="nav">
+      <a href="#home" class="nav__link active" data-nav>Accueil</a>
+      <a href="#about" class="nav__link" data-nav>Profil</a>
+      <a href="#experience" class="nav__link" data-nav>Expérience</a>
+      <a href="#education" class="nav__link" data-nav>Formation</a>
+      <a href="#skills" class="nav__link" data-nav>Compétences</a>
+      <a href="#projects" class="nav__link" data-nav>Projets</a>
+      <a href="#contact" class="nav__link" data-nav>Contact</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="Khalid_OBEIDALLAH_CV.pdf" class="btn btn--sm btn--outline" download>Télécharger CV</a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <span class="blob blob--1"></span>
+      <span class="blob blob--2"></span>
+      <span class="grid-overlay"></span>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow reveal">👋 Bonjour, je suis</p>
+        <h1 class="hero__title reveal">Khalid <span class="text-gradient">Obeidallah</span></h1>
+        <h2 class="hero__subtitle reveal">
+          <span id="typed"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero__desc reveal">
+          Étudiant en Master 2 Management, Audit et Contrôle des Organisations, fort d'un stage en audit et
+          comptabilité. Rigoureux et analytique, à l'aise avec l'audit financier ainsi qu'avec
+          <strong>Python (Machine Learning)</strong> et <strong>SPSS</strong>.
+          À la recherche d'un stage en audit financier, audit interne ou contrôle de gestion.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#contact" class="btn btn--primary">Me contacter</a>
+          <a href="#projects" class="btn btn--ghost">Voir mes projets</a>
+        </div>
+        <div class="hero__meta reveal">
+          <span>📍 Fès, Maroc</span>
+          <span>📞 +212 649 328 175</span>
+          <span>✉️ khalidobeid8@gmail.com</span>
+        </div>
+        <div class="hero__social reveal">
+          <a href="https://www.linkedin.com/in/khalid-obeidallah-56b618321/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero__portrait reveal">
+        <div class="portrait-ring">
+          <img src="photo.png" alt="Portrait de Khalid Obeidallah" class="portrait-img">
+        </div>
+        <div class="floating-card floating-card--top">🎓 Master 2 Audit</div>
+        <div class="floating-card floating-card--bottom">📊 Stage audit & comptabilité</div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down" aria-label="Défiler vers le bas">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT / PROFIL -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section__eyebrow reveal">Qui suis-je</p>
+      <h2 class="section__title reveal">Profil</h2>
+
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            Étudiant en <strong>Master 2 Management, Audit et Contrôle des Organisations</strong> à la FSJES de Fès,
+            je me suis construit une première base pratique grâce à un stage en audit interne et comptabilité.
+          </p>
+          <p>
+            Rigoureux, organisé et doté d'un vrai esprit d'analyse, je combine les fondamentaux de l'audit et du
+            contrôle de gestion avec des compétences data appliquées : modélisation en
+            <strong>Python (Machine Learning)</strong> et analyse statistique sous <strong>SPSS</strong>.
+            Je recherche aujourd'hui un stage en <strong>Audit financier</strong> pour mettre ces compétences au
+            service d'une organisation exigeante.
+          </p>
+
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__num" data-count="1">0</span>
+              <span class="stat__label">Stage effectué</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="5">0</span>
+              <span class="stat__label">Modèles ML comparés</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="3">0</span>
+              <span class="stat__label">Langues parlées</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__card reveal">
+          <ul class="info-list">
+            <li><span>Nom</span><strong>Khalid Obeidallah</strong></li>
+            <li><span>Domaine</span><strong>Audit &amp; Contrôle des Organisations</strong></li>
+            <li><span>Localisation</span><strong>Fès, Maroc</strong></li>
+            <li><span>Email</span><strong>khalidobeid8@gmail.com</strong></li>
+            <li><span>Téléphone</span><strong>+212 649 328 175</strong></li>
+            <li><span>Disponibilité</span><strong>Ouvert aux stages</strong></li>
+          </ul>
+          <a href="Khalid_OBEIDALLAH_CV.pdf" class="btn btn--primary btn--full" download>📄 Télécharger le CV complet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section--alt" id="experience">
+    <div class="container">
+      <p class="section__eyebrow reveal">Parcours</p>
+      <h2 class="section__title reveal">Expérience Professionnelle</h2>
+
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">2024 — Fès</span>
+            <h3>Stagiaire en Comptabilité, Audit</h3>
+            <p class="timeline__org">Domaine royal Douiet — Les Domaines Agricoles</p>
+            <ul>
+              <li>Audit interne : participation aux différentes étapes des missions d'audit interne (préparation, réunion d'ouverture, travaux d'audit et réunion de clôture).</li>
+              <li>Identification des risques opérationnels et recommandations d'amélioration.</li>
+              <li>Comptabilité : facturation, classement et archivage rigoureux des documents comptables.</li>
+              <li>Saisie et suivi des données comptables et administratives sous format Excel.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="container">
+      <p class="section__eyebrow reveal">Formation</p>
+      <h2 class="section__title reveal">Parcours Académique</h2>
+
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <span class="edu-card__year">2025 — 2027</span>
+          <h3>Master 2 — Management, Audit et Contrôle des Organisations</h3>
+          <p>FSJES de Fès</p>
+          <p class="edu-card__desc">Audit financier, audit interne, contrôle de gestion, ingénierie financière et fiscalité.</p>
+        </div>
+        <div class="edu-card reveal">
+          <span class="edu-card__year">2022 — 2025</span>
+          <h3>Licence — Économie et Gestion</h3>
+          <p>FSJES de Fès</p>
+          <p class="edu-card__desc">Mécanismes économiques, comptables et financiers.</p>
+        </div>
+        <div class="edu-card reveal">
+          <span class="edu-card__year">2021</span>
+          <h3>Baccalauréat — Sciences Physiques et chimiques</h3>
+          <p>Option française — Fès</p>
+          <p class="edu-card__desc">Bases solides en physique et chimie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <p class="section__eyebrow reveal">Savoir-faire</p>
+      <h2 class="section__title reveal">Compétences</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">📊</div>
+          <h3>Audit &amp; Finance</h3>
+          <div class="tags">
+            <span>Audit financier</span>
+            <span>Audit interne</span>
+            <span>Contrôle de gestion</span>
+            <span>Ingénierie financière</span>
+            <span>Évaluation de l'entreprise</span>
+            <span>Fiscalité</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">💻</div>
+          <h3>Data &amp; Outils</h3>
+          <div class="bars">
+            <div class="bar">
+              <div class="bar__label"><span>Excel</span><span>90%</span></div>
+              <div class="bar__track"><div class="bar__fill" data-width="90"></div></div>
+            </div>
+            <div class="bar">
+              <div class="bar__label"><span>Python (Machine Learning)</span><span>75%</span></div>
+              <div class="bar__track"><div class="bar__fill" data-width="75"></div></div>
+            </div>
+            <div class="bar">
+              <div class="bar__label"><span>SPSS</span><span>80%</span></div>
+              <div class="bar__track"><div class="bar__fill" data-width="80"></div></div>
+            </div>
+            <div class="bar">
+              <div class="bar__label"><span>Microsoft Dynamics AX</span><span>65%</span></div>
+              <div class="bar__track"><div class="bar__fill" data-width="65"></div></div>
+            </div>
+            <div class="bar">
+              <div class="bar__label"><span>Word</span><span>90%</span></div>
+              <div class="bar__track"><div class="bar__fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">🤝</div>
+          <h3>Savoir-être</h3>
+          <div class="tags">
+            <span>Rigueur</span>
+            <span>Organisation</span>
+            <span>Esprit d'analyse</span>
+            <span>Autonomie</span>
+            <span>Travail d'équipe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section__eyebrow reveal">Réalisations</p>
+      <h2 class="section__title reveal">Projets Académiques</h2>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-card__top">
+            <span class="project-card__tag">Machine Learning</span>
+            <span class="project-card__date">2026</span>
+          </div>
+          <h3>Prédiction du Choix de Client</h3>
+          <p>
+            Comparaison de 5 modèles de Machine Learning (Régression Logistique, KNN, Arbre de Décision,
+            Random Forest, SVM) sous Python.
+          </p>
+          <ul class="project-card__list">
+            <li>Évaluation par Accuracy, Précision, Rappel et F1-score</li>
+            <li>Sélection et justification du meilleur modèle</li>
+          </ul>
+          <div class="tags tags--sm">
+            <span>Python</span><span>Scikit-learn</span><span>Data Science</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__top">
+            <span class="project-card__tag">Statistiques</span>
+            <span class="project-card__date">2026</span>
+          </div>
+          <h3>Analyse Statistique de la Satisfaction Client</h3>
+          <p>Enquête terrain et traitement statistique complet sous SPSS.</p>
+          <ul class="project-card__list">
+            <li>Tests du Khi-2, ANOVA, régression, ACP</li>
+            <li>Interprétation des résultats et recommandations opérationnelles</li>
+          </ul>
+          <div class="tags tags--sm">
+            <span>SPSS</span><span>Enquête</span><span>Statistiques</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__top">
+            <span class="project-card__tag">Comptabilité</span>
+            <span class="project-card__date">2024</span>
+          </div>
+          <h3>Système Simplifié de Comptabilité pour une PME</h3>
+          <p>Conception d'un modèle comptable complet et fonctionnel.</p>
+          <ul class="project-card__list">
+            <li>Journal, grand livre, balance, compte de résultat</li>
+          </ul>
+          <div class="tags tags--sm">
+            <span>Comptabilité</span><span>Excel</span><span>PME</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES & ACTIVITIES -->
+  <section class="section section--alt" id="languages">
+    <div class="container">
+      <p class="section__eyebrow reveal">En plus</p>
+      <h2 class="section__title reveal">Langues &amp; Activités</h2>
+
+      <div class="lang-grid">
+        <div class="lang-card reveal">
+          <h3>🌐 Langues</h3>
+          <div class="lang-item">
+            <span>Français</span>
+            <div class="bar__track"><div class="bar__fill" data-width="100"></div></div>
+            <span class="lang-level">Courant</span>
+          </div>
+          <div class="lang-item">
+            <span>Anglais</span>
+            <div class="bar__track"><div class="bar__fill" data-width="65"></div></div>
+            <span class="lang-level">Intermédiaire</span>
+          </div>
+          <div class="lang-item">
+            <span>Arabe</span>
+            <div class="bar__track"><div class="bar__fill" data-width="100"></div></div>
+            <span class="lang-level">Maternelle</span>
+          </div>
+        </div>
+
+        <div class="lang-card reveal">
+          <h3>🎯 Activités</h3>
+          <ul class="activity-list">
+            <li>
+              <strong>Atelier entrepreneuriat ANAPEC</strong>
+              <span>Formation axée sur la création et la gestion de projets — 2024</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <p class="section__eyebrow reveal">Discutons</p>
+      <h2 class="section__title reveal">Contact</h2>
+      <p class="contact__intro reveal">
+        Actuellement à la recherche d'un stage en Audit financier.
+        N'hésitez pas à me contacter !
+      </p>
+
+      <div class="contact__grid">
+        <a href="mailto:khalidobeid8@gmail.com" class="contact__item reveal">
+          <span class="contact__icon">✉️</span>
+          <div><strong>Email</strong><p>khalidobeid8@gmail.com</p></div>
+        </a>
+        <a href="tel:+212649328175" class="contact__item reveal">
+          <span class="contact__icon">📞</span>
+          <div><strong>Téléphone</strong><p>+212 649 328 175</p></div>
+        </a>
+        <div class="contact__item reveal">
+          <span class="contact__icon">📍</span>
+          <div><strong>Localisation</strong><p>Fès, Maroc</p></div>
+        </div>
+        <a href="https://www.linkedin.com/in/khalid-obeidallah-56b618321/" target="_blank" rel="noopener" class="contact__item reveal">
+          <span class="contact__icon">💼</span>
+          <div><strong>LinkedIn</strong><p>Khalid OBEIDALLAH</p></div>
+        </a>
+        <a href="Khalid_OBEIDALLAH_CV.pdf" download class="contact__item reveal">
+          <span class="contact__icon">📄</span>
+          <div><strong>CV</strong><p>Télécharger le PDF</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#home" class="logo">K<span>.</span>O</a>
+    <p>&copy; <span id="year"></span> Khalid Obeidallah. Tous droits réservés.</p>
+    <a href="#home" class="back-to-top" aria-label="Retour en haut">↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
